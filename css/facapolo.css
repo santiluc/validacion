@@ -1,0 +1,35 @@
+.container-fluid {
+    margin-top: 15px;
+}
+
+.section{
+	background-color: blue;
+}
+
+hr{
+	border-width: 1px;
+	max-width: 58px;
+	margin-bottom: 10px; 
+	margin-top: 10px;
+}
+
+.alistado{
+	background-color: #CCCCCC !important;
+    pointer-events: none;
+    cursor: default;
+}
+
+#sinborde{
+	margin: 0;
+}
+
+.validado{
+	background-color: lightgreen !important;
+}
+.validadofaltante{
+	background-color: #669999 !important;
+}
+.oculto{
+	opacity: 0;
+	display: none;
+}
