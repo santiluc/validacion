@@ -17,11 +17,7 @@ window.name=self.pageYOffset || (document.documentElement.scrollTop+document.bod
 
 <?php
 //error_reporting(0);
-$usuario ="capptus";
-$pass ="Encuentro1";
-$servidor ="SERVER-PC";
-
-$basedatos ="lucembarques";
+require_once('db.php'); 
 $info = array('Database'=>$basedatos, 'UID'=>$usuario, 'PWD'=>$pass); 
 $conexion = sqlsrv_connect($servidor, $info);  
 $numorden = $_GET['ord'];

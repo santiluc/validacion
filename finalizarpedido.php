@@ -1,10 +1,7 @@
 <?php
 session_start();
 $ordencompra = $_GET['id'];
-$usuario ="capptus";
-$pass ="Encuentro1";
-$servidor ="SERVER-PC";
-$basedatos ="lucembarques";
+require_once('db.php'); 
 $info = array('Database'=>$basedatos, 'UID'=>$usuario, 'PWD'=>$pass); 
 $conexion = sqlsrv_connect($servidor, $info);  
 
