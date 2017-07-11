@@ -7,11 +7,8 @@
 
 <?php
 session_start();
+require_once('db.php'); 
 $usid = $_SESSION["usid"];
-$usuario ="capptus";
-$pass ="Encuentro1";
-$servidor ="SERVER-PC";
-$basedatos ="lucembarques";
 $info = array('Database'=>$basedatos, 'UID'=>$usuario, 'PWD'=>$pass); 
 $conexion = sqlsrv_connect($servidor, $info);  
 

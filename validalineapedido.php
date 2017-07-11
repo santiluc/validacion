@@ -1,13 +1,10 @@
 <?php
 session_start();
+require_once('db.php'); 
 $ordencompra = $_GET['id'];
 $articulo = $_GET['pt'];
 $cantidad = $_GET['cnt'];
 $numorden = $_GET['numorden'];
-$usuario ="capptus";
-$pass ="Encuentro1";
-$servidor ="SERVER-PC";
-$basedatos ="lucembarques";
 $info = array('Database'=>$basedatos, 'UID'=>$usuario, 'PWD'=>$pass); 
 $conexion = sqlsrv_connect($servidor, $info);  
 
